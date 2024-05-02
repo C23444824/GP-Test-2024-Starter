@@ -6,8 +6,8 @@ func  _physics_process(delta):
 	position.y += speed * delta
 
 
-func _on_area_entered(area):
+#func _on_area_entered(area):
 	
-	print(area)
+	#print(area)
 	
-	pass # Replace with function body.
+	#pass # Replace with function body.

@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://bunyohpobvu8b"]
 
-[ext_resource type="Script" path="res://PizzaNumber.gd" id="1_mgmk7"]
+[ext_resource type="Script" path="res://Test_Assets/PizzaNumber.gd" id="1_mgmk7"]
 [ext_resource type="Texture2D" uid="uid://cmuejvghd033i" path="res://Tiles/tile_0054.png" id="1_qvpct"]
-[ext_resource type="Script" path="res://CreatePizza.gd" id="2_7db0u"]
-[ext_resource type="Script" path="res://PizzaSpawn.gd" id="3_xiuh0"]
+[ext_resource type="Script" path="res://Test_Assets/CreatePizza.gd" id="2_7db0u"]
+[ext_resource type="Script" path="res://Test_Assets/PizzaSpawn.gd" id="3_xiuh0"]
 [ext_resource type="Texture2D" uid="uid://woqudc5auv08" path="res://Tiles/tile_0106.png" id="5_g42u6"]
 [ext_resource type="PackedScene" uid="uid://da5cqvlnrykk6" path="res://Test_Assets/Pizza2.tscn" id="5_r801v"]
 

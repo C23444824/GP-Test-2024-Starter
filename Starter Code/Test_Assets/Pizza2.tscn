@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://da5cqvlnrykk6"]
+
+[ext_resource type="Texture2D" uid="uid://woqudc5auv08" path="res://Tiles/tile_0106.png" id="1_b3xob"]
+[ext_resource type="Script" path="res://Test_Assets/Pizza2.gd" id="1_dvgq7"]
+[ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="2_2blgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e57l6"]
+size = Vector2(136, 104)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(224, 264)
+script = ExtResource("1_dvgq7")
+explosion = ExtResource("2_2blgj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, -4.73079)
+scale = Vector2(7.44444, 6.58547)
+texture = ExtResource("1_b3xob")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_e57l6")
