@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://bunyohpobvu8b"]
+[gd_scene load_steps=2 format=3 uid="uid://bunyohpobvu8b"]
+
+[ext_resource type="Texture2D" uid="uid://cmuejvghd033i" path="res://Tiles/tile_0054.png" id="1_qvpct"]
 
 [node name="root" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(512.75, 936)
+scale = Vector2(56.8056, 10.1111)
+texture = ExtResource("1_qvpct")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
