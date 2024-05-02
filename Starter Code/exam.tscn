@@ -42,7 +42,7 @@ offset_right = 224.0
 offset_bottom = 136.0
 
 [node name="SpawnPoint" type="Node2D" parent="."]
-position = Vector2(856, 208)
+position = Vector2(840, 216)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(528, 416)
@@ -50,17 +50,32 @@ scale = Vector2(7.36111, 7.36111)
 texture = ExtResource("5_g42u6")
 
 [node name="PizzaSpawn" type="Node2D" parent="." node_paths=PackedStringArray("PizzaButton")]
-position = Vector2(496, 168)
+position = Vector2(528, 160)
 script = ExtResource("3_xiuh0")
 Pizza2 = ExtResource("5_r801v")
 PizzaButton = NodePath("../PizzaButton")
 
 [node name="PizzaSpawn2" type="Node2D" parent="." node_paths=PackedStringArray("PizzaButton")]
-position = Vector2(824, 320)
+position = Vector2(896, 328)
+script = ExtResource("3_xiuh0")
+Pizza2 = ExtResource("5_r801v")
+PizzaButton = NodePath("../PizzaButton")
+
+[node name="PizzaSpawn3" type="Node2D" parent="." node_paths=PackedStringArray("PizzaButton")]
+position = Vector2(136, 328)
+script = ExtResource("3_xiuh0")
+Pizza2 = ExtResource("5_r801v")
+PizzaButton = NodePath("../PizzaButton")
+
+[node name="PizzaSpawn4" type="Node2D" parent="." node_paths=PackedStringArray("PizzaButton")]
+position = Vector2(176, 568)
 script = ExtResource("3_xiuh0")
 Pizza2 = ExtResource("5_r801v")
 PizzaButton = NodePath("../PizzaButton")
 
 [connection signal="pressed" from="PizzaButton" to="PizzaButton" method="_on_pressed"]
 [connection signal="pressed" from="PizzaButton" to="PizzaSpawn" method="_on_pizza_button_pressed"]
+[connection signal="pressed" from="PizzaButton" to="PizzaSpawn2" method="_on_pizza_button_pressed"]
+[connection signal="pressed" from="PizzaButton" to="PizzaSpawn3" method="_on_pizza_button_pressed"]
+[connection signal="pressed" from="PizzaButton" to="PizzaSpawn4" method="_on_pizza_button_pressed"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
